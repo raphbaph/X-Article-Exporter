@@ -14,7 +14,7 @@ A Manifest V3 Chrome extension that exports published X Articles to Markdown and
 1. Open `chrome://extensions`
 2. Enable **Developer mode**
 3. Click **Load unpacked**
-4. Select this folder: `/Users/raphael/X-Article-Exporter`
+4. Select this folder: `~/X-Article-Exporter`
 
 ## Use it
 
