@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>X Article Exporter</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <p class="eyebrow">Markdown export</p>
+      <h1>X Article Exporter</h1>
+      <p class="lede">
+        Turn the current published X Article into a clean `.md` file with title,
+        metadata, and body content.
+      </p>
+
+      <section class="status-shell" aria-live="polite">
+        <p id="status" class="status">
+          Open a published article on x.com, then export it.
+        </p>
+      </section>
+
+      <button id="export-btn" class="export-btn" type="button">
+        Export current article
+      </button>
+
+      <p class="hint">
+        Works on published X Article pages. Threads and regular posts are
+        ignored.
+      </p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

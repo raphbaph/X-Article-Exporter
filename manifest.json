@@ -1,0 +1,34 @@
+{
+  "name": "X Article Exporter",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "description": "Export published X Articles to Markdown files.",
+  "action": {
+    "default_title": "Export X Article",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://x.com/*",
+    "https://twitter.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
